@@ -1,4 +1,4 @@
-sudo apt-get install python-dev python-pip redis-server libicu-dev
+sudo apt-get install python-dev python-setuptools python-pip redis-server libicu-dev
 sudo pip install pygments
 sudo gem install bundler
 git clone git://github.com/gitlabhq/gitlabhq.git
