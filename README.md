@@ -232,7 +232,6 @@ openssl rsa -in server.key -out server.key.insecure
 mv server.key server.key.secure
 mv server.key.insecure server.key
 openssl req -new -key server.key -out server.csr
-</pre>
 ```
  
  Now let's sign that shiny new certificate for 5 years
