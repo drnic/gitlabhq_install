@@ -63,7 +63,7 @@ Now we'll run the script to install the gitolite program.
 This creates a new user "git" on the system, and will store our repositories under this accounts home directory.
 ```bash
 cd ~ 
-gitlabhq_install/ubuntu_gitolite.sh
+sudo gitlabhq_install/ubuntu_gitolite.sh
 ```
 
 When you run this script it will stop at some point with a warning about the path, just press the "Enter" key to continue.
