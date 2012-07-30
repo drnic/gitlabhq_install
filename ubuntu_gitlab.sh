@@ -7,8 +7,13 @@ bundle install --without development test
 
 sudo gem install charlock_holmes
 
-#Create new database.yml file if it doesn't exist yet
-cp -i config/database.yml.example config/database.yml
+echo Configuring for SQLite3
+echo 'production:
+  adapter: sqlite3
+  database: db/production.sqlite3
+  pool: 5
+  timeout: 5000
+' > config/database.yml
 
 #Create new gitlab.yml file if it doesn't exist yet
 cp -i config/gitlab.yml.example config/gitlab.yml
