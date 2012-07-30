@@ -31,12 +31,9 @@ git config --global user.name "GitLabHQ Admin User"
 ```
 
 #### Generate SSH Keys ####
-The GitLabHQ user will use SSH keys for login and authentication with the git user we'll create later.  So let's generate our keys.  Make sure to do the following:
-When prompted for the file in which to save the file, press Enter
-When prompted for a passphrase, press Enter
-When prompted to confirm the passphrase again, press Enter
+The GitLabHQ user will use SSH keys for login and authentication with the git user we'll create later.  So let's generate our keys.
 ```bash
-ssh-keygen -t rsa
+ssh-keygen -f ~/.ssh/id_rsa -N ''
 ```
 
 #### Prepare To Install GitLabHQ ####
